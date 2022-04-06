@@ -1,7 +1,7 @@
 class Play
 {
     public:
-    static void run()
+    void run()
     {
         
     }
