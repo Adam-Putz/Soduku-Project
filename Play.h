@@ -1,3 +1,4 @@
+#include"Move.h"
 class Play
 {
     public:
