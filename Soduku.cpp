@@ -1,4 +1,4 @@
-#include"play.h"
+#include"Play.h"
 
 int main()
 {
