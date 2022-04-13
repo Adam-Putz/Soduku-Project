@@ -3,13 +3,31 @@ class Play
 {
     private:
     int** board;
+    int movesRemaining;
     public:
-    Play()
-    {
-    }
     void run()
     {
-        //Adam
+        char decision = startPrintMenu()
+        board = generateBoard(decision);
+
+        printGamePlay();
+
+        Move playerMove = getPlayerMove();
+
+        while(movesRemaining <= 81)
+        {
+            playerMove = getPlayerMove();
+            if(isValidMove())
+            {
+                updateBoard(playerMove);
+                printGamePlay();
+                movesRemaining++;
+            }
+            else
+            {
+
+            }
+        }
     }
     int** generateBoard(char difficulty)
     {
@@ -27,7 +45,7 @@ class Play
     {
         //Brian
     }
-    void menu()
+    char startPrintMenu()
     {
         //Brian
     }
@@ -40,6 +58,9 @@ class Play
 
     }
     Move redo()
+    {
 
+    }
+    
 
 };
