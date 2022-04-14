@@ -1,4 +1,7 @@
 #include"Move.h"
+#include<iostream>
+#include<string
+using namespace std;
 class Play
 {
     private:
@@ -7,7 +10,7 @@ class Play
     public:
     void run()
     {
-        char decision = startPrintMenu()
+        char decision = startPrintMenu();
         board = generateBoard(decision);
 
         printGamePlay();
@@ -36,12 +39,14 @@ class Play
     void updateBoard(Move playerMove)
     {
         //Adam
+        board[playerMove.getRow()][playerMove.getColumn()] = playerMove.getNumber();
     }
     bool isValidMove()
     {
-        //Brian
+        //Adam
+        
     }
-    void printGamePlay()
+    string printGamePlay()
     {
         //Brian
     }
